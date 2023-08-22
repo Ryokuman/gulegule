@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  frontend:
+    build: ./fn
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./fn/:/fn
+    command: "yarn start"
